@@ -11,13 +11,24 @@ function calculateSum(){
 }
 
 function clickHandler(){
-    if (calculateSum() == 180){
-        output.innerText = "It's a triangle.";
-        output.style.color = "green";
-    }
-    else{
-        output.innerText = "It's not a triangle.";
+    if(angles[0].value == ""){
+        output.innerText = "Enter angle-1.";
         output.style.color = "red";
+    }else if(angles[1].value == ""){
+        output.innerText = "Enter angle-2.";
+        output.style.color = "red";
+    }else if(angles[2].value == ""){
+        output.innerText = "Enter angle-3.";
+        output.style.color = "red";
+    }else{
+        if (calculateSum() == 180){
+            output.innerText = "It's a triangle.";
+            output.style.color = "green";
+        }
+        else{
+            output.innerText = "It's not a triangle.";
+            output.style.color = "red";
+        }
     }
 }
 

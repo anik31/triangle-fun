@@ -8,7 +8,6 @@ function clickHandler(){
     var score = 0;
     var index = 0;
     const data = new FormData(formQuiz);
-    console.log(data)
     for (var value of data.values()){
         if (value == answers[index]){
             score++
