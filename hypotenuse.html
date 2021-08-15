@@ -5,26 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hypotenuse</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/images/triangle.png" type="image/x-icon">
 </head>
 <body>
     <nav>
-        <li>
-            <a href="./index.html">Is Triangle</a>
-        </li>
-        <li>
-            <a href="./quiz.html">Quiz</a>
-        </li>
-        <li>
-            <a href="./hypotenuse.html">Hypotenuse</a>
-        </li>
-        <li>
-            <a href="./area.html">Area</a>
-        </li>
+        <ul class="list-non-bullet">
+            <li class="list-item-inline">
+                <a class="link" href="./index.html">Is Triangle</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="./quiz.html">Quiz</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link link-active" href="./hypotenuse.html">Hypotenuse</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="./area.html">Area</a>
+            </li>
+        </ul>
     </nav>
     <h1>Calculate Hypotenuse</h1>
-    <label for="side-a">Side A length</label>
+    <label for="side-a">Side-A length (cm)</label>
     <input type="number" class="length-sides" id="side-a">
-    <label for="side-b">Side B length</label>
+    <label for="side-b">Side-B length (cm)</label>
     <input type="number" class="length-sides" id="side-b">
     <button id="btn-calculate">Calculate</button>
     <p id="output"></p>

@@ -6,7 +6,8 @@ function clickHandler(){
     var sideA = lengthSides[0].value;
     var sideB = lengthSides[1].value;
     var hypotenuse = Math.sqrt((sideA * sideA) + (sideB * sideB));
-    output.innerText = `Hypotenuse length - ${hypotenuse}`;
+    output.innerText = `Hypotenuse length - ${hypotenuse} cm`;
+    output.style.color = "brown";
 }
 
 btnCalculate.addEventListener("click",clickHandler);

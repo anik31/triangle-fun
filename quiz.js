@@ -16,6 +16,7 @@ function clickHandler(){
         index++
     }    
     result.innerText = `Score - ${score}`;
+    result.style.color = "orange";
 }
 
 btnSubmit.addEventListener("click",clickHandler);
