@@ -7,13 +7,13 @@
 }
 body{
     font-family: 'Poppins', sans-serif;
-    margin: 0;
+    margin: auto;
     text-align: center;
 }
 nav{
     background-color: var(--primary-color);
     /* border-bottom-left-radius: 2rem ; */
-    padding: 1rem;
+    padding: 0.5rem;
     /* padding-right: 0.5rem ;
     padding-bottom: 0.5rem; */
     color: white;
@@ -28,6 +28,11 @@ nav{
 input{
     display: block;
     margin: 1rem auto;
+    padding: 0.5rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    border: 1px solid var(--primary-color);
+    font-size: 15px;
 }
 input[type="radio"]{
     display: inline;
@@ -64,4 +69,23 @@ nav .link{
     font-size: 25px;
     font-weight: bold;
     margin-top: 2rem;
+}
+.question-container{
+    display: block;
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+    padding: 1rem 0.6rem;
+    margin: 1rem auto;
+    max-width: 600px;
+}
+ul{
+    padding-inline-start: 0;
+}
+.fab,.fas{
+    font-size: 30px;
+    color: var(--primary-color);
+    margin: 0 0.5rem;
+}
+footer{
+    margin-top: 5rem;
 }

@@ -7,6 +7,7 @@
     <title>Triangle Quiz</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="/images/triangle.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/0873e1ec33.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <nav>
@@ -27,44 +28,62 @@
     </nav>
     <h1>Triangle Quiz</h1>
     <form id="form-quiz">
-        <p>A(n) ___________ triangle has all slides of equal length.</p>
-        <input id="equilateral" type="radio" name="option1" value="equilateral">
-        <label for="equilateral">equilateral</label>
-        <input id="right angle" type="radio" name="option1" value="right angle">
-        <label for="right angle">right angle</label>
-        <input id="scalene" type="radio" name="option1" value="scalene">
-        <label for="scalene">scalene</label>
-        <p>What is the third angle for the triangle where angle1 = 45° and angle2 = 45°?</p>
-        <input id="45" type="radio" name="option2" value="45 degree">
-        <label for="45">45 degree</label>
-        <input id="60" type="radio" name="option2" value="60 degree">
-        <label for="60">60 degree</label>
-        <input id="90" type="radio" name="option2" value="90 degree">
-        <label for="90">90 degree</label>
-        <p>An angle of 95° is ___________ angle.</p>
-        <input id="obtuse" type="radio" name="option3" value="obtuse">
-        <label for="obtuse">obtuse</label>
-        <input id="Right" type="radio" name="option3" value="Right">
-        <label for="Right">Right</label>
-        <input id="acute" type="radio" name="option3" value="acute">
-        <label for="acute">acute</label>
-        <p>D and E are respectively the midpoints on the sides AB and AC of a triangle ABC and BC = 6 cm. If DE || BC, then the length of DE (in cm) is</p>
-        <input id="2.5" type="radio" name="option4" value="2.5">
-        <label for="2.5">2.5</label>
-        <input id="3" type="radio" name="option4" value="3">
-        <label for="3">3</label>
-        <input id="5" type="radio" name="option4" value="5">
-        <label for="5">5</label>
-        <p>If a triangle has an angle of 90 degrees, what is it called?</p>
-        <input id="obtuse" type="radio" name="option5" value="obtuse">
-        <label for="obtuse">obtuse</label>
-        <input id="acute" type="radio" name="option5" value="acute">
-        <label for="acute">acute</label>
-        <input id="right" type="radio" name="option5" value="right angled">
-        <label for="right">right angled</label>
+        <div class="question-container">
+            <p>A(n) ___________ triangle has all slides of equal length.</p>
+            <input id="equilateral" type="radio" name="option1" value="equilateral">
+            <label for="equilateral">equilateral</label>
+            <input id="right angle" type="radio" name="option1" value="right angle">
+            <label for="right angle">right angle</label>
+            <input id="scalene" type="radio" name="option1" value="scalene">
+            <label for="scalene">scalene</label>
+        </div>
+        <div class="question-container">
+            <p>What is the third angle for the triangle where angle1 = 45° and angle2 = 45°?</p>
+            <input id="45" type="radio" name="option2" value="45 degree">
+            <label for="45">45 degree</label>
+            <input id="60" type="radio" name="option2" value="60 degree">
+            <label for="60">60 degree</label>
+            <input id="90" type="radio" name="option2" value="90 degree">
+            <label for="90">90 degree</label>
+        </div>
+        <div class="question-container">
+            <p>An angle of 95° is ___________ angle.</p>
+            <input id="obtuse" type="radio" name="option3" value="obtuse">
+            <label for="obtuse">obtuse</label>
+            <input id="Right" type="radio" name="option3" value="Right">
+            <label for="Right">Right</label>
+            <input id="acute" type="radio" name="option3" value="acute">
+            <label for="acute">acute</label>
+        </div>
+        <div class="question-container">
+            <p>D and E are respectively the midpoints on the sides AB and AC of a triangle ABC and BC = 6 cm. If DE || BC, then the length of DE (in cm) is</p>
+            <input id="2.5" type="radio" name="option4" value="2.5">
+            <label for="2.5">2.5</label>
+            <input id="3" type="radio" name="option4" value="3">
+            <label for="3">3</label>
+            <input id="5" type="radio" name="option4" value="5">
+            <label for="5">5</label>
+        </div>
+        <div class="question-container">
+            <p>If a triangle has an angle of 90 degrees, what is it called?</p>
+            <input id="obtuse" type="radio" name="option5" value="obtuse">
+            <label for="obtuse">obtuse</label>
+            <input id="acute" type="radio" name="option5" value="acute">
+            <label for="acute">acute</label>
+            <input id="right" type="radio" name="option5" value="right angled">
+            <label for="right">right angled</label>
+        </div>
     </form>
     <button id="btn-submit">Submit</button>
     <p id="result"></p>
+    <footer>
+        <ul>
+            <li class="list-item-inline"><a href="https://github.com/anik31" target="_blank"><i class="fab fa-github"></i></a></li>
+            <li class="list-item-inline"><a href="https://twitter.com/_anik_31" target="_blank"><i class="fab fa-twitter"></i></a></li>
+            <li class="list-item-inline"><a href="https://www.linkedin.com/in/anik31/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+            <li class="list-item-inline"><a href="https://aniketprakash.netlify.app/" target="_blank"><i class="fas fa-suitcase"></i></a></li>
+        </ul>
+    </footer>
     <script src="quiz.js" type="text/javascript"></script>
 </body>
 </html>
